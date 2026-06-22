@@ -1,0 +1,239 @@
+%-------------------------
+% Aswin M Kumar — AIoT Resume
+% Overleaf/pdflatex compatible
+%-------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aswin M Kumar} \\ \vspace{1pt}
+    \small Thiruvananthapuram, Kerala, India \\
+    \small +91 8590522637 $|$
+    \href{mailto:aswin2k03.mk@gmail.com}{\underline{aswin2k03.mk@gmail.com}} $|$
+    \href{https://linkedin.com/in/aswinmkumar}{\underline{linkedin.com/in/aswinmkumar}} $|$
+    \href{https://github.com/aswin-m-kumar}{\underline{github.com/aswin-m-kumar}} $|$
+    \href{https://aswin-m-kumar.github.io}{\underline{aswin-m-kumar.github.io}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+Electrical and Electronics Engineering student building AI-powered systems at the intersection of embedded hardware, IoT, and applied machine learning. Delivered production-deployed LLM pipelines, won recognition at national hackathons and industry expos, and completed government-funded aerospace training. Targeting roles in embedded systems, IoT engineering, and AIoT product development.
+}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College of Engineering Trivandrum (CET)}{Kerala, India}
+      {B.Tech -- Electrical and Electronics Engineering $|$ CGPA: 8.21/10}{2023 -- Present (Graduating May 2027)}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Embedded Systems, Control Systems, Signal Processing, Machine Learning, IoT Applications}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Python, C, JavaScript, Flutter/Dart} \\
+     \textbf{Frameworks \& Tools}{: Flask, OpenCV, Arduino, ESP32, Arduino Cloud, KiCAD, MATLAB/Simulink, ANSYS, Git} \\
+     \textbf{Domains}{: Embedded Systems, IoT Systems, Machine Learning, Computer Vision, LLM Integration, PCB Design} \\
+     \textbf{Platforms}{: GitHub Actions, Render, GitHub Pages, Wokwi}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IoT Intern}{June 2025}
+      {Keltron (Kerala State Electronics Development Corporation)}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Prototyped IoT systems using ESP32 and Arduino Uno interfaced with ultrasonic, thermal, and LiDAR sensors}
+        \resumeItem{Deployed cloud-connected monitoring systems on Arduino Cloud; implemented relay-based automation and real-time device state tracking}
+        \resumeItem{Built functional prototypes (water level monitor, temperature array, traffic signal controller) and authored technical report on IoT device architecture}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter Intern}{Dec 2025 -- Apr 2026}
+      {PgBee, TBI CET}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Implemented 7 core screens for a PG/hostel discovery app from Figma designs using Flutter in a startup environment}
+        \resumeItem{Delivered responsive UI within Git-based agile workflows; app currently in beta on Play Store}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PR Coordinator}{2025 -- Present}
+      {Internship Cell, CET}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed InternAgent and InternBuddy -- AI tools that cut internship post creation time from 45 minutes to under 20 minutes}
+        \resumeItem{Coordinated student-recruiter communication and managed outreach campaigns across channels}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Participant -- Drone/UAS Technologies Bootcamp}{June 2025}
+      {MeitY / SwaYaan Programme, NIT Calicut}{Calicut, Kerala}
+      \resumeItemListStart
+        \resumeItem{Completed 40-hour government-funded programme covering aerodynamics, drone assembly, flight operations, and CFD simulation}
+        \resumeItem{Executed ANSYS Mechanical and Fluent structural and CFD analyses on airfoil designs; produced simulation report}
+        \resumeItem{Designed, fabricated, and flew a straight-wing glider; secured \textbf{3rd place} among 28+ teams in endurance flight competition}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Membership Coordinator \& Event Organiser}{2025 -- Present}
+      {SAEINDIA -- College of Engineering Trivandrum}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Organised CADClash (10+ participants including first inter-college entry from AIT Pune) and Biomimicry ideathon (12 participants) at Tech Rave, SAEINDIA CET Technical Fest}
+        \resumeItem{Managed SAEINDIA memberships and compliance documentation for BAJA SAEINDIA 2026}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InternAgent -- PR Content Automation} $|$ \emph{Flask, Python, LLaMA 3.1 (NVIDIA NIM), Render}}{\href{https://aswin-m-kumar.github.io/Intern_Agent/}{\underline{Live}}}
+          \resumeItemListStart
+            \resumeItem{Cut internship poster creation time from 45 minutes to 10--20 minutes via a production-deployed LLM pipeline on Render}
+            \resumeItem{Built SSRF-safe scraping pipeline with Cloudscraper fallback; structured text extraction handling 20k+ characters per document}
+            \resumeItem{Integrated LLaMA 3.1 (70B) via NVIDIA NIM with prompt-engineered workflows; dynamic frontend with QR-based application linking}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{InternBuddy -- Student AI Platform} $|$ \emph{Flask, Python, LLaMA 3.1 (NVIDIA NIM), BeautifulSoup}}{\href{https://aswin-m-kumar.github.io/InternBuddy_CET/}{\underline{Live}}}
+          \resumeItemListStart
+            \resumeItem{Full-stack AI platform for CET Internship Cell: skill gap detection, eligibility validation, and resume-to-role matching}
+            \resumeItem{Engineered LLM-backed APIs for structured extraction from URLs and documents; production-deployed with CSRF protection, rate limiting, and anti-bot handling}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{LithiumSense -- BMS Architecture} $|$ \emph{System Design, Fault Analysis, Technical Presentation}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a fire-hardened Battery Management System with a 5-stage emergency response pipeline targeting sub-500ms response across overvoltage, undervoltage, overcurrent, short-circuit, and thermal runaway faults}
+            \resumeItem{Designed a 900\textdegree C-rated survivable black-box data module for post-incident forensic analysis}
+            \resumeItem{\textbf{Trophy winner} at Allianz Risk Consulting Compass-360 Expo; presented to industry risk and engineering professionals}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Trash Nada -- AI Waste Management} $|$ \emph{Python, React, OpenCV, TensorFlow, IoT}}{\href{https://github.com/aswin-m-kumar/trash_nada}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Built frontend and IoT integration for an AI-based waste classification system (${\sim}$95\% model accuracy) with real-time hotspot mapping}
+            \resumeItem{\textbf{Top 10 / 133 teams} at Satwa25 National Hackathon (36-hour competition, 2025)}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Gesture-Controlled Interface} $|$ \emph{Arduino Leonardo, MPU6050, I2C, C}}{\href{https://github.com/aswin-m-kumar/Gesture-Controlled-Game}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{IMU-based motion control interface achieving ${\sim}$50ms end-to-end latency for real-time gesture input}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{NOT\_KTU Results} $|$ \emph{HTML5, CSS3, JavaScript, Tailwind CSS, Tone.js}}{\href{https://github.com/aswin-m-kumar/Not_KTU_Results}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Satirical university portal parody with a progressive multi-rule password game and real-time audio feedback; \textbf{selected for TinkerHub Useless Projects 2.0}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Resume CI/CD Pipeline} $|$ \emph{GitHub Actions, LaTeX, Git}}{}
+          \resumeItemListStart
+            \resumeItem{Automated LaTeX resume compilation and PDF deployment on every commit; version-controlled resume with continuous deployment}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Top 10 / 133 teams} -- Satwa25 National Hackathon, Saintgits College of Engineering (2025) \\
+     \textbf{Trophy Winner} -- Allianz Risk Consulting Compass-360 Expo, LithiumSense BMS Architecture (2025) \\
+     \textbf{3rd Place} -- Endurance flight competition, MeitY/SwaYaan Drone/UAS Bootcamp, NIT Calicut (2025)
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Google AI Essentials -- Google $|$
+     Cybersecurity Essentials -- Cisco $|$
+     Industrial Automation \& PLC Systems -- Bosch $|$
+     PCB Design Workshop -- IET CET
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

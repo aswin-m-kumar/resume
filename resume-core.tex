@@ -1,0 +1,229 @@
+%-------------------------
+% Aswin M Kumar — Core / Embedded Systems Resume
+% Overleaf/pdflatex compatible
+%-------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aswin M Kumar} \\ \vspace{1pt}
+    \small Thiruvananthapuram, Kerala, India \\
+    \small +91 8590522637 $|$
+    \href{mailto:aswin2k03.mk@gmail.com}{\underline{aswin2k03.mk@gmail.com}} $|$
+    \href{https://linkedin.com/in/aswinmkumar}{\underline{linkedin.com/in/aswinmkumar}} $|$
+    \href{https://github.com/aswin-m-kumar}{\underline{github.com/aswin-m-kumar}} $|$
+    \href{https://aswin-m-kumar.github.io}{\underline{aswin-m-kumar.github.io}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+Electrical and Electronics Engineering student with hands-on experience in embedded systems, IoT prototyping, power systems, and structural simulation. Built and deployed sensor-integrated hardware systems, completed government-funded aerospace training, and earned industry recognition for applied battery fault-detection research. Targeting embedded systems and IoT engineering roles.
+}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College of Engineering Trivandrum (CET)}{Kerala, India}
+      {B.Tech -- Electrical and Electronics Engineering $|$ CGPA: 8.21/10}{2023 -- Present (Graduating May 2027)}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Circuit Design, Embedded Systems, Control Systems, Power Systems, Signal Processing, IoT Applications}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Python, C} \\
+     \textbf{Hardware \& Tools}{: ESP32, Arduino, KiCAD, SolidWorks, MATLAB/Simulink, ANSYS Mechanical, ANSYS Fluent, Arduino Cloud, Wokwi, Git} \\
+     \textbf{Domains}{: Embedded Systems, IoT, PCB Design, Power Systems, Control Systems, Structural \& CFD Simulation} \\
+     \textbf{Protocols \& Interfaces}{: I2C, UART, GPIO, PWM}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IoT Intern}{June 2025}
+      {Keltron (Kerala State Electronics Development Corporation)}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Prototyped IoT systems using ESP32 and Arduino Uno interfaced with ultrasonic, thermal, and LiDAR sensors}
+        \resumeItem{Deployed cloud-connected monitoring systems on Arduino Cloud; implemented relay-based automation and real-time device state tracking}
+        \resumeItem{Built functional prototypes -- water level monitor, temperature sensor array, traffic signal controller -- and authored technical report on IoT device architecture}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Participant -- Drone/UAS Technologies Bootcamp}{June 2025}
+      {MeitY / SwaYaan Programme, NIT Calicut}{Calicut, Kerala}
+      \resumeItemListStart
+        \resumeItem{Completed 40-hour government-funded programme covering aerodynamics, drone assembly, flight operations, and computational fluid dynamics}
+        \resumeItem{Executed ANSYS Mechanical and Fluent structural and CFD analyses on airfoil geometries; produced full simulation report}
+        \resumeItem{Designed, fabricated, and flew a straight-wing fixed-wing glider; secured \textbf{3rd place} among 28+ teams in endurance flight competition}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Team Member -- Suspension \& Steering}{2023 -- Present}
+      {EVolve Racing CET (Formula Student / FSAE)}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Supported suspension and steering system modelling using SolidWorks; contributed to cross-functional vehicle performance validation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Membership Coordinator \& Event Organiser}{2025 -- Present}
+      {SAEINDIA -- College of Engineering Trivandrum}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Organised CADClash (10+ participants, first inter-college edition with AIT Pune) and Biomimicry ideathon at Tech Rave, SAEINDIA CET Technical Fest}
+        \resumeItem{Managed SAEINDIA memberships and compliance documentation for BAJA SAEINDIA 2026}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{LithiumSense -- BMS Architecture} $|$ \emph{System Design, Fault Analysis, Technical Presentation}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a fire-hardened Battery Management System with a 5-stage emergency response pipeline targeting sub-500ms fault response across overvoltage, undervoltage, overcurrent, short-circuit, and thermal runaway conditions}
+            \resumeItem{Designed a 900\textdegree C-rated survivable black-box data module for post-incident forensic analysis of battery fault events}
+            \resumeItem{\textbf{Trophy winner} at Allianz Risk Consulting Compass-360 Expo; presented to industry risk and engineering professionals}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Off-Grid Solar Power Plant Design} $|$ \emph{MATLAB, Simulink, PVGIS, MS Excel, LaTeX}}{}
+          \resumeItemListStart
+            \resumeItem{Conducted on-site load survey for Machines Lab Block; estimated 93.17 kW connected load and 2,235 kWh daily energy demand under worst-case conditions}
+            \resumeItem{Designed 545 kWp off-grid solar PV system with 5.2 MWh LiFePO4 battery storage (2-day backup), PV array of 1,010 modules, and 150 kW N+1 redundant inverter achieving performance ratio of 0.79}
+            \resumeItem{Applied PVGIS irradiance data and battery DoD constraints for system sizing; completed techno-economic analysis (Rs. 9.94 Cr cost, ${\sim}$15-year payback)}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Gesture-Controlled Interface} $|$ \emph{Arduino Leonardo, MPU6050, I2C, C}}{\href{https://github.com/aswin-m-kumar/Gesture-Controlled-Game}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Implemented IMU-based motion control interface using MPU6050 gyroscope/accelerometer achieving ${\sim}$50ms end-to-end latency for real-time gesture input}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Voice-Controlled Smart Switch} $|$ \emph{ESP32, Arduino IDE, Arduino Cloud, C}}{}
+          \resumeItemListStart
+            \resumeItem{Built cloud-connected smart switch using ESP32 with speech-driven command processing and real-time device state monitoring via IoT cloud platform}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Trash Nada -- AI Waste Management} $|$ \emph{Python, React, OpenCV, TensorFlow, IoT}}{\href{https://github.com/aswin-m-kumar/trash_nada}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Built frontend and IoT integration layer for an AI-based waste classification system with real-time hotspot mapping}
+            \resumeItem{\textbf{Top 10 / 133 teams} at Satwa25 National Hackathon (36-hour competition, 2025)}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{NOT\_KTU Results} $|$ \emph{HTML5, CSS3, JavaScript, Tailwind CSS, Tone.js}}{\href{https://github.com/aswin-m-kumar/Not_KTU_Results}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Satirical university portal parody with progressive password game and real-time audio feedback; \textbf{selected for TinkerHub Useless Projects 2.0}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Resume CI/CD Pipeline} $|$ \emph{GitHub Actions, LaTeX, Git}}{}
+          \resumeItemListStart
+            \resumeItem{Automated LaTeX resume compilation and PDF deployment on every commit via GitHub Actions; version-controlled continuous deployment}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Top 10 / 133 teams} -- Satwa25 National Hackathon, Saintgits College of Engineering (2025) \\
+     \textbf{Trophy Winner} -- Allianz Risk Consulting Compass-360 Expo, LithiumSense BMS Architecture (2025) \\
+     \textbf{3rd Place} -- Endurance flight competition, MeitY/SwaYaan Drone/UAS Bootcamp, NIT Calicut (2025)
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Industrial Automation \& PLC Systems -- Bosch $|$
+     Google AI Essentials -- Google $|$
+     Cybersecurity Essentials -- Cisco $|$
+     PCB Design Workshop -- IET CET
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

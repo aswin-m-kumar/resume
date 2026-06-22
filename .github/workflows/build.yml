@@ -1,4 +1,4 @@
-name: Build Resume PDF
+name: Build Resume PDFs
 
 on:
   push:
@@ -15,18 +15,25 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Compile LaTeX document
+    - name: Compile AIoT Resume
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: resume.tex
+        root_file: resume-aiot.tex
 
-    - name: Rename PDF
-      run: mv resume.pdf Aswin_M_Kumar-Resume.pdf
+    - name: Compile Core Resume
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: resume-core.tex
 
-    - name: Commit and push updated PDF
+    - name: Rename PDFs
+      run: |
+        mv resume-aiot.pdf Aswin_M_Kumar-Resume-AIoT.pdf
+        mv resume-core.pdf Aswin_M_Kumar-Resume-Core.pdf
+
+    - name: Commit and push updated PDFs
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git add Aswin_M_Kumar-Resume.pdf
-        git diff --cached --quiet || git commit -m "Auto-update resume PDF"
+        git add Aswin_M_Kumar-Resume-AIoT.pdf Aswin_M_Kumar-Resume-Core.pdf
+        git diff --cached --quiet || git commit -m "Auto-update resume PDFs [AIoT + Core]"
         git push

@@ -5,14 +5,16 @@
 
 ---
 
-# 📄 Resume
+# 📄 Resumes
 
-📥 **Download the latest version**
+I maintain two tailored resumes — choose the one that best fits your interest:
 
-[![Resume](https://img.shields.io/badge/Download-Resume-blue?style=for-the-badge&logo=adobeacrobatreader)](https://aswin-m-kumar.github.io/resume/Aswin_M_Kumar-Resume.pdf)
+| Resume | Focus | View Online | Download PDF |
+|--------|-------|-------------|--------------|
+| **AIoT & Embedded** | AI, IoT, LLM, ML, Computer Vision, Full-Stack | [🔗 View](https://aswin-m-kumar.github.io/resume/aiot/) | [📥 PDF](https://aswin-m-kumar.github.io/resume/Aswin_M_Kumar-Resume-AIoT.pdf) |
+| **Core Embedded & System Design** | Embedded Systems, PCB Design, Power Systems, Simulation | [🔗 View](https://aswin-m-kumar.github.io/resume/core/) | [📥 PDF](https://aswin-m-kumar.github.io/resume/Aswin_M_Kumar-Resume-Core.pdf) |
 
-🔗 Direct Link  
-https://aswin-m-kumar.github.io/resume/Aswin_M_Kumar-Resume.pdf
+🏠 **Landing Page**: [aswin-m-kumar.github.io/resume/](https://aswin-m-kumar.github.io/resume/)
 
 ---
 
@@ -85,4 +87,4 @@ https://aswin-m-kumar.github.io/resume/Aswin_M_Kumar-Resume.pdf
 
 ---
 
-⭐ *This resume is automatically updated using GitHub Actions.*
+⭐ *Resumes are automatically compiled and deployed using GitHub Actions.*
